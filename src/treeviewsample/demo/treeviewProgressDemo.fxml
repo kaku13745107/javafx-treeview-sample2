@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="treeviewsample.demo.TreeViewProgressDemoController">
+   <children>
+               <GridPane AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS" >
+                  <children>
+                   <TreeView fx:id="fileTree" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS" />
+                   <GridPane alignment="BOTTOM_LEFT" GridPane.hgrow="ALWAYS" GridPane.vgrow="NEVER" GridPane.rowIndex="1">
+                        <children>
+                           <ProgressBar fx:id="progressBar" layoutX="6.0" layoutY="299.0" prefHeight="20.0" prefWidth="559.0" progress="0.0" GridPane.columnSpan="5" GridPane.rowIndex="2" />
+               <Button fx:id="exitButton" layoutX="494.0" layoutY="339.0" mnemonicParsing="false" onAction="#onExitButtonClicked" prefHeight="26.0" prefWidth="57.0" text="Exit" AnchorPane.bottomAnchor="35.0" AnchorPane.topAnchor="339.0" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+               <Label fx:id="destFolderLabel" prefHeight="21.0" prefWidth="583.0" text="" GridPane.columnSpan="5" GridPane.rowIndex="1" />
+               <Button fx:id="startButton" layoutX="175.0" layoutY="339.0" mnemonicParsing="false" onAction="#onStartButtonClicked" prefHeight="26.0" prefWidth="55.0" text="Start" GridPane.rowIndex="3" />
+                        </children>
+                        <columnConstraints>
+                           <ColumnConstraints maxWidth="470.0" minWidth="103.0" prefWidth="116.0" />
+                           <ColumnConstraints maxWidth="140.0" minWidth="36.0" prefWidth="140.0" />
+                           <ColumnConstraints maxWidth="76.0" minWidth="0.0" prefWidth="69.0" />
+                           <ColumnConstraints maxWidth="197.0" minWidth="38.0" prefWidth="165.0" />
+                           <ColumnConstraints maxWidth="294.0" minWidth="63.0" prefWidth="71.0" />
+                        </columnConstraints>
+                        <rowConstraints>
+                           <RowConstraints maxHeight="0.0" minHeight="0.0" prefHeight="0.0" />
+                           <RowConstraints maxHeight="24.0" minHeight="0.0" prefHeight="24.0" />
+                           <RowConstraints maxHeight="31.0" minHeight="0.0" prefHeight="31.0" />
+                           <RowConstraints maxHeight="33.0" minHeight="-Infinity" prefHeight="33.0" />
+                           <RowConstraints maxHeight="22.0" minHeight="4.0" prefHeight="4.0" />
+                        </rowConstraints>
+                     </GridPane>
+                    
+                  </children>
+               </GridPane>
+   </children>
+</AnchorPane>
